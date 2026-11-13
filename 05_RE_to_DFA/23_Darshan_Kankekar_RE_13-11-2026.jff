@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>re</type>
+	<expression>(0+1)*101</expression>
+</structure>
+

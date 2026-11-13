@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="qEE">
+			<x>160.0</x>
+			<y>140.0</y>
+			<label>even 0s, even 1s</label>
+			<initial/>
+		</state>
+		<state id="1" name="qOE">
+			<x>420.0</x>
+			<y>140.0</y>
+			<label>odd 0s, even 1s</label>
+		</state>
+		<state id="2" name="qEO">
+			<x>160.0</x>
+			<y>360.0</y>
+			<label>even 0s, odd 1s</label>
+			<final/>
+		</state>
+		<state id="3" name="qOO">
+			<x>420.0</x>
+			<y>360.0</y>
+			<label>odd 0s, odd 1s</label>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>
+

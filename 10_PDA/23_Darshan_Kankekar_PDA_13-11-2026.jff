@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>pda</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>130.0</x>
+			<y>180.0</y>
+			<label>push phase (read w)</label>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>350.0</x>
+			<y>180.0</y>
+			<label>match phase (read w^R)</label>
+		</state>
+		<state id="2" name="q2">
+			<x>560.0</x>
+			<y>180.0</y>
+			<label>accepting state</label>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+			<pop>Z</pop>
+			<push>0Z</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>1</read>
+			<pop>Z</pop>
+			<push>1Z</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+			<pop>0</pop>
+			<push>00</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>1</read>
+			<pop>0</pop>
+			<push>10</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+			<pop>1</pop>
+			<push>01</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>1</read>
+			<pop>1</pop>
+			<push>11</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>#</read>
+			<pop>Z</pop>
+			<push>Z</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>#</read>
+			<pop>0</pop>
+			<push>0</push>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>#</read>
+			<pop>1</pop>
+			<push>1</push>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>0</read>
+			<pop>0</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>1</read>
+			<pop>1</pop>
+			<push/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read/>
+			<pop>Z</pop>
+			<push>Z</push>
+		</transition>
+	</automaton>
+</structure>

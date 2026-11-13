@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>140.0</x>
+			<y>150.0</y>
+			<label>initial / epsilon</label>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>410.0</x>
+			<y>150.0</y>
+			<label>ends with 1</label>
+			<final/>
+		</state>
+		<state id="2" name="q2">
+			<x>140.0</x>
+			<y>350.0</y>
+			<label>saw 0 after start or 1</label>
+		</state>
+		<state id="3" name="q3">
+			<x>410.0</x>
+			<y>350.0</y>
+			<label>saw consecutive 0s</label>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>grammar</type>
+	<!--The list of productions.-->
+	<production>
+		<left>E</left>
+		<right>TQ</right>
+	</production>
+	<production>
+		<left>Q</left>
+		<right>+TQ</right>
+	</production>
+	<production>
+		<left>Q</left>
+		<right/>
+	</production>
+	<production>
+		<left>T</left>
+		<right>FR</right>
+	</production>
+	<production>
+		<left>R</left>
+		<right>*FR</right>
+	</production>
+	<production>
+		<left>R</left>
+		<right/>
+	</production>
+	<production>
+		<left>F</left>
+		<right>(E)</right>
+	</production>
+	<production>
+		<left>F</left>
+		<right>i</right>
+	</production>
+</structure>

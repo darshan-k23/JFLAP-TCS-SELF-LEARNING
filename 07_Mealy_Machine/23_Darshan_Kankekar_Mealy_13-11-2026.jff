@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>mealy</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="A">
+			<x>140.0</x>
+			<y>180.0</y>
+			<label>no relevant match</label>
+			<initial/>
+		</state>
+		<state id="1" name="B">
+			<x>320.0</x>
+			<y>180.0</y>
+			<label>suffix is 1</label>
+		</state>
+		<state id="2" name="C">
+			<x>500.0</x>
+			<y>180.0</y>
+			<label>suffix is 10</label>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+			<trans>0</trans>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>1</read>
+			<trans>0</trans>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>0</read>
+			<trans>0</trans>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>1</read>
+			<trans>0</trans>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read>0</read>
+			<trans>0</trans>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>1</read>
+			<trans>1</trans>
+		</transition>
+	</automaton>
+</structure>

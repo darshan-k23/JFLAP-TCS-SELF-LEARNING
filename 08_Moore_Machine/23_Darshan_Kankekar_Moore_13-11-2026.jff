@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<type>moore</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="E">
+			<x>160.0</x>
+			<y>180.0</y>
+			<label>even number of 1s</label>
+			<initial/>
+			<output>0</output>
+		</state>
+		<state id="1" name="O">
+			<x>380.0</x>
+			<y>180.0</y>
+			<label>odd number of 1s</label>
+			<output>1</output>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>
