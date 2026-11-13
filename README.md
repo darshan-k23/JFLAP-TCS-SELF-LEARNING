@@ -5,7 +5,6 @@
 **Class / Division:** D12A  
 **Institution:** Vivekanand Education Society's Institute of Technology (VESIT)  
 **Academic Submission Date:** 13-11-2026  
-**Naming Standard:** `23_Darshan_Kankekar_<TOPIC>_13-11-2026`
 
 ---
 
